@@ -26,6 +26,7 @@ public class ScanCodeActivity extends Activity {
 //          apiService.httpd.scanResult(scanResult.toString());
           apiService.httpd.scanResult(scanResult.getContents());
         }
+        moveTaskToBack(true);
         finish();
     }
 
