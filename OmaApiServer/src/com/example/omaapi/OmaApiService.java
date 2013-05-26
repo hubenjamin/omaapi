@@ -53,12 +53,6 @@ public class OmaApiService extends Service {
         super.onDestroy();
 	}
 
-    public void quitServer(View view) {
-    	if (httpd != null) httpd.stop();
-    	super.onDestroy();
-    	this.stopSelf();
-    }
-
     /**
      * Class for clients to access.  Because we know this service always
      * runs in the same process as its clients, we don't need to deal with
