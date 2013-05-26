@@ -89,14 +89,24 @@ public class OmaApiService extends Service {
 
         	int mc = uri.indexOf("/mc");
             int cmapi = uri.indexOf("/cmapi");
+            int push = uri.indexOf("/push");
 
             String choice = parms.get("choice");
             if (choice != null) {
             	if (choice.equalsIgnoreCase("mc")) mc = 0;
             	if (choice.equalsIgnoreCase("cmapi")) cmapi = 0;
             }
-
-            if (mc==0) {
+            
+            // Stub for WRAPI Push API: currently only verifies events can be delivered... 
+            // the connection is closed immediately which causes an error after the first event
+            // TODO: add SSE support to SampleHttpd.java
+            if (push==0) {
+                SampleHttpd.Response resp = new SampleHttpd.Response(Status.OK,"text/event-stream",
+                		"event: message\nid: 1\ndata: hello world\n\n");
+                resp.addHeader("Access-Control-Allow-Origin","*");
+                return resp;
+            }
+            else if (mc==0) {
                 mc_async_response = false;
                 Intent intent = new Intent(context, ScanCodeActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
