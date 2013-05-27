@@ -62,7 +62,9 @@ import java.util.*;
 * <p/>
 * </ul>
 * <p/>
-*/
+ * See the separate "LICENSE.md" file for the distribution license (Modified BSD licence)
+ */
+
 
 public abstract class SampleHttpd {
     /**
