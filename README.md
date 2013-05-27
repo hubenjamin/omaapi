@@ -13,6 +13,15 @@ Android application providing a localhost HTTP server for web apps that want to 
 >
 >Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
+SampleHttpd.java is based upon NanoHttpd
+
+>The OMA API Server for Android uses Open Source Software that is licensed under the license referenced below (the "License"), and you may not use this file except in compliance with the License. You may obtain a copy of the Licenses at:
+>
+>https://github.com/NanoHttpd
+>Copyright (c) 2012-2013 by Paul S. Hawke, 2001,2005-2013 by Jarno Elonen, 2010 by Konstantinos Togias
+>
+>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
 ZXing Android Integration
 
 >The OMA API Server for Android uses Open Source Software that is licensed under the Apache License Version 2.0 (the "License"), and you may not use this file except in compliance with the License. You may obtain a copy of the Licenses at:
